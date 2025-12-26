@@ -1,0 +1,42 @@
+# PASTA DÜKKANI OTOMASYONU - KURULUM VE ÇALIŞTIRMA REHBERİ
+
+Bu proje PHP ve MySQL tabanlıdır. Çalıştırmak için bilgisayarınızda bir yerel sunucu (XAMPP, WampServer vb.) kurulu olmalıdır.
+
+Aşağıdaki adımları izleyerek projeyi çalıştırabilirsiniz:
+
+## 1. Hazırlık (XAMPP Kurulumu)
+Eğer bilgisayarınızda XAMPP kurulu değilse:
+1. https://www.apachefriends.org/tr/index.html adresinden XAMPP indirin ve kurun.
+2. XAMPP Control Panel'i açın.
+3. "Apache" ve "MySQL" servislerinin yanındaki "Start" butonlarına basın. (Yeşil olmalılar)
+
+## 2. Veritabanı Kurulumu
+1. Tarayıcınızda `http://localhost/phpmyadmin` adresine gidin.
+2. Sol menüden "Yeni" (New) diyerek yeni bir veritabanı oluşturun.
+   - Veritabanı adı: `pastry_shop` olsun.
+3. Oluşturduğunuz `pastry_shop` veritabanına tıklayın.
+4. Üst menüden "İçe Aktar" (Import) sekmesine gelin.
+5. "Dosya Seç" butonuna tıklayıp, masaüstünüzdeki `SQL OTOMASYON` klasörü içindeki `database.sql` dosyasını seçin.
+6. Sayfanın altındaki "İçe Aktar" (Go) butonuna basın.
+   - "İçe aktarma başarıyla tamamlandı" mesajını görmelisiniz.
+
+## 3. Projeyi Taşıma
+1. Masaüstünüzdeki `SQL OTOMASYON` klasörünü kopyalayın.
+2. XAMPP'ın kurulu olduğu yere gidin (Genellikle `C:\xampp\htdocs`).
+3. Kopyaladığınız klasörü `htdocs` içine yapıştırın.
+   - Klasör adı boşluksuz olursa daha iyi olur. Örn: `pastane`.
+   - Yeni yol şöyle olmalı: `C:\xampp\htdocs\pastane`
+
+## 4. Çalıştırma
+1. Tarayıcınızı açın.
+2. Adres çubuğuna `http://localhost/pastane` (veya klasöre ne ad verdiyseniz) yazın.
+3. Proje açılacaktır!
+
+### Giriş Bilgileri
+- **Yönetici Girişi:**
+  - Kullanıcı Adı: `admin`
+  - Şifre: `admin123`
+- **Müşteri Girişi:**
+  - Ana sayfadan "Kayıt Ol" diyerek yeni müşteri oluşturabilirsiniz.
+
+İyi çalışmalar!

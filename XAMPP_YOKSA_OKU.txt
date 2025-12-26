@@ -1,0 +1,26 @@
+# XAMPP KURULUM REHBERİ
+
+Yaptığımız PHP ve SQL projesini çalıştırmak için bilgisayarınızda bir sunucu olması ŞARTTIR. Windows bunu kendiliğinden yapamaz. "XAMPP" programı bu işi gören en popüler ve ücretsiz araçtır.
+
+## 1. İndirme
+Aşağıdaki linke tıklayın ve XAMPP'ı indirin:
+https://www.apachefriends.org/tr/download.html
+
+> **Not:** "XAMPP for Windows" başlığı altındaki son sürümü (örn: PHP 8.2.12) indirin.
+
+## 2. Kurulum
+1. İndirdiğiniz `.exe` dosyasına çift tıklayın.
+2. Karşınıza uyarı çıkarsa "Yes" veya "OK" diyerek geçin.
+3. Kurulum ekranlarında sürekli **Next (İleri)** diyerek devam edin.
+4. Kurulum bittiğinde "Do you want to start the Control Panel now?" kutucuğu işaretli olsun ve **Finish**'e basın.
+
+## 3. Başlatma
+1. XAMPP Control Panel açılacak.
+2. Listede **Apache** ve **MySQL** göreceksiniz.
+3. İkisinin de yanındaki **Start** butonuna basın.
+4. İsimleri **Yeşil** renge döndüyse çalışıyor demektir!
+
+## 4. Projeyi Çalıştırma
+Artık daha önce oluşturduğum `KURULUM_VE_CALISTIRMA.txt` dosyasındaki adımları (Veritabanı Kurulumu ve Projeyi Taşıma) uygulayabilirsiniz.
+
+Kolay gelsin!

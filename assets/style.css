@@ -1,0 +1,244 @@
+:root {
+    /* Yeni Renk Paleti - Canlı ve Modern */
+    --primary-color: #FF5E5B;
+    /* Daha sıcak bir mercan */
+    --secondary-color: #00CECB;
+    /* Canlı turkuaz */
+    --accent-color: #FFED66;
+    /* Parlak sarı */
+    --text-color: #2D3047;
+    /* Derin mavi-gri */
+    --dark-bg: #2D3047;
+    --light-bg: #FFFFEA;
+    /* Çok açık krem */
+    --white: #ffffff;
+    --success: #2ECC71;
+    --danger: #E74C3C;
+    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Segoe UI', sans-serif;
+    /* Daha modern font ailesi varsayıyoruz */
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Zengin Arka Plan */
+    background-image: url('https://source.unsplash.com/1600x900/?dessert,coffee,pastry');
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(3px);
+    /* Hafif bulanıklık ile içerik okunsun */
+}
+
+/* Container şeffaflığı ve stili */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    /* Yarı saydam beyaz */
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), #FF9999);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 15px rgba(255, 94, 91, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.badge {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    /* Hap şeklinde butonlar */
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styles */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+/* Tab Yapısı (Login için) */
+.tab-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-btn {
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #aaa;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ürün Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s;
+    border: 1px solid #f0f0f0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-info h3 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+/* Progress Bar (Sipariş Takip) */
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 25px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--success));
+    width: 0%;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease-in-out;
+}
